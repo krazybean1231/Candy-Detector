@@ -22,7 +22,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          pip install opencv-python-headless numpy matplotlib scikit-learn tensorflow torch torchvision torchaudio
+          pip install opencv-python numpy matplotlib scikit-learn tensorflow torch torchvision torchaudio
 
       - name: Run script
         run: python live-model.py # Replace main.py with your script's filename
